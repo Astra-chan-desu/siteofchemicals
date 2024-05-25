@@ -17,13 +17,13 @@
 </head>
 
 <body>
-
-	<nav class="navbar navbar-expand-lg navbar-default box nav " style="height: auto; border-radius: 180px;">
+	<!--navbar-->
+	<nav class="navbar navbar-expand-lg navbar-default box nav " style="height: auto; border-radius: 180px;" id="navbar">
 		<div class="container-fluid" style="margin:0; padding: 0;">
 			<div class="navbar-header">
 				<div id="therm-chem-cont">
 					<div style="display: flex; justify-items: flex-start;align-items: center;">
-					<p class="therm therm-chem-cont-item" id="thermopol">Thermopol</p>
+					<p class="therm-chem-cont-item" id="thermopol">Thermopol</p>
 					<div class="therm-chem-cont-item" id="chemlog" style="display: flex;align-items: center;">
 						<img src="img/lg/chemlog.png" style="transform: scaleY(1.2);">
 					</div>
@@ -34,22 +34,10 @@
 							aria-controls="nvb-menu overl x barbarbar">
 
 							<p class="collapse multi-collapse navbar-collapse nav-btn-el" id="x">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg"
-									viewBox="0 0 16 16" style="color:black;">
-									<path fill-rule="evenodd"
-										d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z">
-									</path>
-									<path fill-rule="evenodd"
-										d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z">
-									</path>
-								</svg>
+								<img src="img/icon/burx.svg">
 							</p>
-							<p class="collapse multi-collapse navbar-collapse show  nav-btn-el" id="barbarbar"
-								style=" padding-top: 6px;">
-								<span class="icon-bar" style="background-color: black; float: left ;"></span>
-								<span class="icon-bar" style="background-color: black;	float: left ;"></span>
-								<span class="icon-bar" style="background-color: black;	float: left ;"></span>
-
+							<p class="collapse multi-collapse navbar-collapse show  nav-btn-el" id="barbarbar">
+								<img src="img/icon/bur.svg">
 							</p>
 						</button>
 					</div>
@@ -70,9 +58,11 @@
 			</div>
 		</div>
 	</nav>
+	<!--navbar end-->
 
-
+	<a class="ellipse" id="go-up" href="#navbar" style="position:fixed; right:5vw; top: 65vh;z-index: 79;"><img src="img/icon/up.svg" style="height: 56px;"></a>
 	<!-- content-->
+	<!--page 1-->
 		<div class="content-row" style="height:max-content;" >
 				<div class="box left-cont-row-col">
 					<p><strong>
@@ -87,7 +77,7 @@
 					</p>
 					<button class="go-to-app" id="cont-go-to-app" >
 						<p>
-							Перейти к <br class="mobile-v"> приложению
+							Перейти к <br> приложению
 						</p>
 						<img class="ellipse" src="img/icon/right.svg" style="object-fit: contain; background-color: white;">
 						
@@ -96,6 +86,14 @@
 
 				<div class="box img-box right-cont-row-col"  style="background-image: url('img/1440/hum1.png');background-size: cover;"></div>
 		</div>
+	<!--end page 1-->
+
+
+	<!--page 2-->
+	<!-- end page 2-->
+
+	<!--page 3-->
+	<!--end page 3-->
 
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item box">
@@ -146,7 +144,8 @@
 			  </div>
 		  </div>	
 
-	<!--mobile  style="background-image:url('img/1920/1920_2.jpg');    vers-->
+
+	<!-- page 3 mobile vers-->
 
 	<div class="mob-ver-scroll mobile-v">
 		<div class="scrollingBlock" scrl="#advantages-ellipse-cont">
@@ -185,7 +184,19 @@
 			<a class="ellipse index-link" href="#item6"> </a>
 		</div>
 	</div>
+	<!--end modile vers page 3-->
 
+	<!--page 4-->
+	<!--end page 4-->
+
+	<!--page 5-->
+	<!--end page 5-->
+
+	<!--page 6-->
+	
+	<!--end page 6-->
+
+	<!--mobile vers page 6-->
 	<div class="mob-ver-scroll mobile-v">
 		<div class="scrollingBlock" scrl="#peculiarities-ellipse-cont">
 			<div class="item" id="info-scr-bl">
@@ -219,9 +230,40 @@
 		</div>
 	</div>
 
+	<!--end mobile vers page 6-->
+
+	<!--page 7-->
+	<div class="content-row" style="height:max-content;" id ="page6">
+		<div class="box img-box left-cont-row-col"  style="background-image: url('img/1440/1440_6.jpg');background-size: cover;"></div>
+
+		<div class="box right-cont-row-col" style="display: flex; flex-direction: column;align-items: center;">
+			<strong  style="text-align: center; margin:1em;">
+			<p>
+				Не упустите возможность использовать это удобное веб-приложение для работы с химическими данными!
+			</p>
+			<br>
+			<p >
+				Попробуйте прямо сейчас и оцените все его преимущества.
+				
+			</p>
+			</strong>
+			<button class="go-to-app" id="cont-go-to-app" >
+				<p>
+					Перейти к <br class="mobile-v"> приложению
+				</p>
+				<img class="ellipse" src="img/icon/right.svg" style="object-fit: contain; background-color: white;">
+				
+			</button>
+		</div>
+	</div>
+	<!--end page 7-->
+	
+
+	
+	<!--page 8-->
+	<!--end page 8-->
 
 
-	<!--end of mv-->
 
 
 
@@ -234,7 +276,7 @@
 			<div class=" col-sm-6"
 				style="min-height: 179px;height: 100%; display: flex; flex-direction: column;padding-top: 24px; ">
 				<div>
-					<p class="therm">Thermopol</p>
+					<p  id="thermopol">Thermopol</p>
 				</div>
 				<div class="logo">
 					<div id="univlob">

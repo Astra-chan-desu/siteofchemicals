@@ -27,7 +27,7 @@ body {
 	min-width: 100vw;
 }
 
-.therm{
+#thermopol{
 	font-family: "Nexa Demo Light";
 	width: auto;
 	position: absolute;
@@ -36,14 +36,7 @@ body {
 	position: sticky;
 	font-size: 54px;
 }
-#nav-go-to-app{
-	display: none;
-}
-#cont-go-to-app{
-	display: flex;
-	margin: 2em;
-	font-size: 0.4em;
-}
+
 a{
 	font-size: 100%;
 	color: black;
@@ -69,9 +62,12 @@ a{
 
 .nav {
 	z-index: 100!important;
-	padding-left: 2em;
+	margin-bottom: 0;
 }
 
+go-to-app{
+	align-self: center;
+}
 .navbar-collapse{
 margin-right: 0!important;
 }
@@ -92,17 +88,13 @@ margin-right: 0!important;
 	right: 0;
 	background-color: white;
 	border-radius: 8px;
-	padding: 0;
 	width: 100%;
 	font-weight: 400!important;
 	color: black;
 	justify-content: flex-end;
-	margin-top: 10px!important;
+	margin-top: 10px;
 }
 
-.show{
-	margin-top: 0!important;
-}
 
 .nav-btn:hover{
 	background-color: transparent!important;
@@ -115,16 +107,23 @@ margin-right: 0!important;
 .navbar-toggle{
 	margin: 0;
 }
+.navbar-default .navbar-nav>li>a {
+	color: black;
+	padding-left: 1em;
+	margin-top: 0;
 
+}
 .nav-btn-el{
 	width: 60px;
-	border: 0;
+	border: 0!important;
+	margin: 0;
 }
 .go-to-app{
 	background-color: var(--blue-bg-color);
 	padding: 12px 12px 16px 16px;
 	height: 54px;
 	width:fit-content;
+	max-width: 100%;
 	gap: 24px;
 	border-radius: 180px;
 	border-width: 0;
@@ -132,7 +131,9 @@ margin-right: 0!important;
 	white-space: nowrap;
 	justify-content: flex-end;
 	transition: all 1s;
-	line-height: -1px;
+	display: flex;
+	flex-direction: row;
+	align-items:center ;
 }
 .go-to-app:hover{
 background-color: #94CEEC;
@@ -140,11 +141,16 @@ background-color: #94CEEC;
 .go-to-app:active{
 	background-color:#13B1E3;
 }
-
-.ellipse{
-	border-radius: 200px;
-	border-width: 0;
+#nav-go-to-app{
+	display: none;
 }
+#cont-go-to-app{
+	display: flex;
+	font-size: 0.4em;
+}
+.go-to-app p{
+	margin: 0;
+} 
 
 .go-to-app .ellipse{
 	border-radius: 180px;
@@ -158,16 +164,20 @@ background-color: #94CEEC;
 	float: right;
 }
 
-
-.navbar-default .navbar-nav>li>a {
-	color: black;
-	padding-left: 3px;
+.ellipse{
+	border-radius: 200px;
+	border-width: 0;
 }
 
-.logo{
-	display: flex;
-	white-space: nowrap;
+.ellipse-container{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 4px;
+	justify-content: center;
 }
+
+
 
 #univlob img{
 	max-width: 188px;
@@ -185,24 +195,6 @@ background-color: #94CEEC;
 #chemlog{
 	object-fit:contain;
 }
-
-.logo{
-	max-height: 53px;
-	flex-direction: row;
-    align-items: center;
-	gap: 32px;
-	margin-top: auto;
-}
-.info-ab-pr{
-	font-size: 19px;	
-}
-
-.footer{
-	margin:0; 
-	padding: 0;
-	justify-content: space-between;
-}
-
 #therm-chem-cont{
 	display: flex;
 	width: 100%;
@@ -212,6 +204,26 @@ background-color: #94CEEC;
 	align-items: center;
 }
 
+
+.logo{
+	max-height: 53px;
+	flex-direction: row;
+    align-items: center;
+	gap: 32px;
+	margin-top: auto;
+	display: flex;
+	white-space: nowrap;
+}
+
+.info-ab-pr{
+	font-size: 19px;	
+}
+
+.footer{
+	margin:0; 
+	padding: 0;
+	justify-content: space-between;
+}
 
 .index-link {
 	background-color:#C1C8CB;	
@@ -223,15 +235,6 @@ background-color: #94CEEC;
 	background-color: var(--blue-bg-color);
 	margin-top: 0;
 }
-
-.ellipse-container{
-    display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-	gap: 4px;
-	justify-content: center;
-}
-
 
 
 .mob-ver-scroll{
@@ -312,6 +315,13 @@ h3{
 }
 bluetext{
 
+
+#page6 .box{
+	gap: 32px;
+}
+
+.go-to-app br{display: none;}
+=======
 	color:var(--blue-bg-color)
 }
 .accordion{
@@ -319,6 +329,7 @@ bluetext{
  font-family: 'Raleway';
  border-color:transparent;
 border-radius:8px;
+
 
 }
 .accordion-item{
@@ -376,6 +387,7 @@ border-radius:8px;
 		display: inline-block;
 		height: 54px;
 		background-color: transparent;
+		margin-top: 0;
 	}
 	.overlay{display: none;}
 
@@ -392,6 +404,7 @@ border-radius:8px;
 		line-height: 1;
 	}
 	.overlay{display: none;}
+
 	.bold-large{
 		font-family: "Raleway";
 		font-size:20px;
@@ -402,13 +415,16 @@ border-radius:8px;
 		font-size:16px;
 		line-height: auto;
 	}
+
 }
 
 
+
 @media (max-width:1440px) and (min-width:768px)  {
-	
+
 	#nvb-menu{
 		width: auto;
+		max-width: 100%;
 		height: auto;
 		display: inline-block;
 		height: 54px;
@@ -424,25 +440,32 @@ border-radius:8px;
 		padding: 16px 24px 16px 24px;
 		height: 86px;
 	}
-	.thermopol{
+	#thermopol{
 		line-height: 1;
-	}
-	@media (min-width:1100px) {
-		
-	#nav-go-to-app{
-		display: flex;
+		font-size: 50px;
 	}
 
-	#cont-go-to-app{
-		display: none;
+	.nav>li>a{
+		margin-top: 1.2em;
+		padding: 0px ;
 	}
-
+	.content-row .box{
+		padding:2em;
 	}
-
+	
 	@media (max-width:950px){
+
+		.nav>li>a{
+			margin-top: 1em;
+			padding-left: 0px;
+		}
+
 		#nvb-menu a{
 			font-size: 15px;
 			padding-right: 4px;
+		}
+		#chemlog img{
+			width: auto;
 		}
 	}
 	@media (max-width:900px){
@@ -453,6 +476,7 @@ border-radius:8px;
 		#nvb-menu{
 			max-width: 400px;
 		}
+
 		
 	}
 	@media (max-width:800px){
@@ -474,8 +498,13 @@ border-radius:8px;
 
 
 @media (min-width:320px) and (max-width:768px) {
-	
+	#go-up img{
+		height: 32px!important;
+	}
 	.box{border-radius: 16px;}
+	.content-row .box{
+		padding:2em;
+	}
 	#nvb-menu{
 		position: absolute;
 		z-index: 100;
@@ -496,9 +525,6 @@ border-radius:8px;
 		height: 64px;
 
 	}
-	.go-to-app br{
-		display: block;
-	}
 	.go-to-app{
 		line-height:1;
 		font-size: 10px;
@@ -508,48 +534,26 @@ border-radius:8px;
 		line-height: 2.3;
 		margin-left: 1em;
 	}
+	.box p{
+		font-size: 24px;
+	}
 	@media (max-width:500px){
-		.therm{
+		#thermopol{
 			font-size: 35px;
 			line-height: 2;
 			margin-left: 1em;
 		}
-		.box p{
-			line-height: 1;
-		}
-		
-		.go-to-app p{
-			margin-bottom: 0;
-		}
-		.go-to-app img{
-			height: 25px;
-			width: 25px;
-		}
-		.box p{
-			font-size: 15px;
-		}
+
 		#formul img{height: 30vh;}
-		#cont-go-to-app{
-			margin: 0;
-		}
+
 	}
 	@media (max-width:450px){
 		.content-row{
 			gap: 10px;
 		}
-		#formul img{max-height: 12vh;}
-		.go-to-app{
-			line-height:1;
-			font-size: 2px!important;
-			padding: 3px 1em 0 1em;
-			width: 105px;
-			height: 30px;
-			gap: 2px;
-			align-items: center;
-			justify-content: center;
-		}
+		#formul img{width: 70%;;}
 		
-		.therm{
+		#thermopol{
 			font-size: 23px !important;
 			margin-left: 1em;
 			line-height: 2;
@@ -560,8 +564,10 @@ border-radius:8px;
 			width: 80%;
 		}
 		.nav-btn{
+		
 			width: 30px;
 			padding-left: 0;
+
 		}
 		.nav-btn-el{
 			padding-left: 0;
@@ -581,17 +587,10 @@ border-radius:8px;
 			padding: 0;
 			margin: 0;
 		}
-		.box p{
-			font-size: 12px;
-			line-height: 1;
-		}
-		.go-to-app img{
-			height: 15px!important;
-			width: 15px!important;
-		}
+		.go-to-app br{display: block;}
 	}
 	@media (max-width:370px) {
-		.therm{
+		#thermopol{
 			margin-left: 1em;
 			line-height: 3;
 		}
@@ -601,6 +600,37 @@ border-radius:8px;
 		}
 		
 	}
+
+	.left-cont-row-col{
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.right-cont-row-col {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.content-row{
+		flex-direction: column;
+		gap:0px;
+		
+	}
+	
+	.content-row .box {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.img-box:before {
+		content: "";
+		padding-top: 70%;
+		float: left;
+	}
+
+=======
 	.bold-large{
 		font-family: "Raleway";
 		font-size:12px;
@@ -611,6 +641,7 @@ border-radius:8px;
 		font-size:10px;
 		line-height: 12px;
 	}
+
 }
 @media (max-width:320px) {
 	.content-row{
@@ -618,7 +649,13 @@ border-radius:8px;
 		gap:0px;
 		
 	}
-	
+	.go-to-app {
+		height: max-content;
+	}
+	.go-to-app .ellipse{
+
+		width: 100%;
+	}
 	.content-row .box {
 		width: 100%;
 		display: flex;
@@ -649,7 +686,7 @@ border-radius:8px;
 		padding: 3px;
 		height: 36px;
 	}
-	.therm{
+	#thermopol{
 		padding-left: 1.2em;
 		font-size: 20px!important;
 		line-height: 3;
@@ -671,7 +708,7 @@ border-radius:8px;
 
 	.img-box:before {
 		content: "";
-		padding-top: 100%;
+		padding-top: 70%;
 		float: left;
 	}
 
@@ -679,6 +716,10 @@ border-radius:8px;
 
 		margin: auto;
 		overflow: hidden; 
+	}
+
+	#formul img{
+		width: 100%;
 	}
 	@media (max-width:270px){
 		.nav-btn{
@@ -693,6 +734,9 @@ border-radius:8px;
 			padding: 0;
 			margin: 0;
 		}
+		.go-to-app br{
+			display: block;
+		}
 		
 	}
 	#cont-go-to-app{
@@ -703,9 +747,6 @@ border-radius:8px;
 	}
 	#cont-go-to-app p{
 		margin-bottom: 0;
-	}
-	#cont-go-to-app br{
-		display: none;
 	}
 
 	.left-cont-row-col{
