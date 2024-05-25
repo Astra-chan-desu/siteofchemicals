@@ -442,13 +442,26 @@ margin-left:auto;
 
 #page2 .text-cont div{
 	width: 50%;
+	font-size: 40px;
 }
 
 h4{
 	font-family: 'Raleway';
 	font-weight: 600;
 	margin:0;
-	}
+
+
+}
+
+#page5 p{
+font-size: 36px;
+font-family: "Raleway";
+font-weight: 500;
+}
+
+#page5{
+	padding:10vh 10vw 10vh 10vw;
+}
 
 /*media*/
 
@@ -502,12 +515,23 @@ h4{
 		font-size: 18px!important;
 	}
 
+	.go-to-app{
+		font-size:20px;
+		height: auto;
+	}
+	.go-to-app ing{
+		height: 100%;
+	}
+
 }
 
 
 
 @media (max-width:1440px) and (min-width:768px)  {
 
+	#page5{
+		padding:5vh 2vw 2vh 5vw;
+	} 
 	#nvb-menu{
 		width: auto;
 		max-width: 100%;
@@ -538,6 +562,9 @@ h4{
 	.content-row .box{
 		padding:2em;
 	}
+	#page2 .text-cont div{
+		font-size: 30px;
+	}
 	
 	@media (max-width:950px){
 
@@ -566,6 +593,9 @@ h4{
 		
 	}
 	@media (max-width:800px){
+		#page2 .text-cont div{
+			font-size: 25px;
+		}
 		#chemlog{
 			display: none!important;
 		}
@@ -583,10 +613,22 @@ h4{
 	h4{
 		font-size: 14px!important;
 	}
+	.go-to-app{
+		padding: 0.5em 0.5em 0.5em 0.5em;
+	}
 }
 
 
 @media (min-width:320px) and (max-width:768px) {
+	#page5 p{
+		font-size: 20px;
+	}
+	#page5{
+		padding: 3em;
+	}
+	#page2 .text-cont div{
+		font-size: 20px;
+	}
 	#go-up img{
 		height: 32px!important;
 	}
@@ -651,6 +693,11 @@ h4{
 
 	}
 	@media (max-width:450px){
+
+		#page2 .text-cont div{
+			font-size: 15px;
+		}
+
 		.content-row{
 			gap: 10px;
 		}
@@ -691,6 +738,10 @@ h4{
 			margin: 0;
 		}
 		.go-to-app br{display: block;}
+
+		.mobile-v{
+			display: flex;
+		}
 		
 	}
 	@media (max-width:370px) {
@@ -707,13 +758,15 @@ h4{
 	}
 
 	.left-cont-row-col{
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		order: 2;
 	}
 
 	.right-cont-row-col {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		order: 1;
 	}
 
 	.content-row{
@@ -753,6 +806,15 @@ h4{
 
 }
 @media (max-width:320px) {
+
+	#page5 p{
+		font-size: 15px;
+	}
+	#page5 br{display: block;}
+
+	#page5{
+		padding: 3em;
+	}
 	#page2 .text-cont div{
 		width: 100%;
 		font-size: 12px;
@@ -866,24 +928,27 @@ h4{
 		}
 		
 	}
-	#cont-go-to-app{
+	#go-to-app{
 		align-items: center;
 		height: auto;
 		margin: 5em 0 0.5em 0;
 		gap:3px;
 	}
-	#cont-go-to-app p{
+	#go-to-app p{
 		margin-bottom: 0;
 	}
 
 	.left-cont-row-col{
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		order: 2;
 	}
 
 	.right-cont-row-col {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		order: 1;
+	
 	}
 
 	.bold-large{
