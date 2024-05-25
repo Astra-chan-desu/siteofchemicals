@@ -310,10 +310,53 @@ h3{
 	background-color: transparent;
 	font-size: clamp(12px, 2.7*(1vw + 1vh) / 2, 3em);
 }
+bluetext{
 
+	color:var(--blue-bg-color)
+}
+.accordion{
+	width:100%;
+ font-family: 'Raleway';
+ border-color:transparent;
+border-radius:8px;
 
+}
+.accordion-item{
+	margin-bottom:1em;
+
+}
+
+.accordion-header{
+	display: flex;
+	border-color:transparent;
+	border-radius:8px;
+	margin:0;
+
+}
+.accordion-button{
+
+	border-color:transparent;
+	background-color: transparent;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	width:100%;
+
+}
+.accordion-button.collapsed::after {
+	content: ""url("../img/icon/plus-circle.svg");float:right;justify-self:flex-end;margin-left:auto;
+  }
+  .accordion-button:not(.collapsed)::after {
+	content: ""url('../img/icon/minus-circle.svg');float:right;justify-self:flex-end;margin-left:auto;
+  }
+
+  
+  
+  
 /*media*/
-
+.bold-large{
+	font-weight:700;
+}
 
 @media all and (min-width:1440px) {
 
@@ -349,7 +392,16 @@ h3{
 		line-height: 1;
 	}
 	.overlay{display: none;}
-
+	.bold-large{
+		font-family: "Raleway";
+		font-size:20px;
+		line-height: auto;
+	}
+	.regular{
+		font-family:"Raleway";
+		font-size:16px;
+		line-height: auto;
+	}
 }
 
 
@@ -363,7 +415,7 @@ h3{
 		background-color: transparent;
 	}
 	.overlay{display: none;}
-
+	
 	body{
 		padding: 24px 64px;
 		font-size: 16px;
@@ -408,7 +460,16 @@ h3{
 			display: none!important;
 		}
 	}
-
+	.bold-large{
+		font-family: "Raleway";
+		font-size:20px;
+		line-height: auto;
+	}
+	.regular{
+		font-family:"Raleway";
+		font-size:16px;
+		line-height: auto;
+	}
 }
 
 
@@ -540,7 +601,16 @@ h3{
 		}
 		
 	}
-
+	.bold-large{
+		font-family: "Raleway";
+		font-size:12px;
+		line-height: auto;
+	}
+	.regular{
+		font-family:"Raleway";
+		font-size:10px;
+		line-height: 12px;
+	}
 }
 @media (max-width:320px) {
 	.content-row{
@@ -648,5 +718,15 @@ h3{
 		border-top-right-radius: 0;
 	}
 
+	.bold-large{
+		font-family: "Raleway";
+		font-size:14px;
+		line-height: auto;
+	}
+	.regular{
+		font-family:"Raleway";
+		font-size:14px;
+		line-height: auto;
+	}
 }
 
