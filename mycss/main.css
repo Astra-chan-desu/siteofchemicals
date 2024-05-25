@@ -300,12 +300,63 @@ h3{
 	overflow-x: hidden;
 }
 
+.blueonblue{
+	color:var(--blue-bg-color)!important;
+	background-color: #DDF2FE!important;
+	width:max-content;
+	text-transform: uppercase;
+	height: max-content;
+	padding: 4px 12px 4px 12px!important;	margin: 0%;
+	align-self:flex-start;
+} 
+.whiteongray/*Белым по серому white on gray*/
+{
+	color:white!important;
+	background-color: #C1C8CB!important;
+	width:max-content;
+	text-transform: uppercase;
+	height: max-content;
+	padding: 4px 12px 4px 12px!important;	margin: 0%;
+	align-self:flex-start;
+}
+.blackonwhite/*Чёрным по белому black on white*/
+{
+	color:black!important;
+	background-color: white!important;
+	width:max-content;
+	text-transform: uppercase;
+	height: max-content;
+	padding: 4px 12px 4px 12px!important;	margin: 0%;
+	align-self:flex-start;
+}
+.whiteonblue/*Белым по синему white on blue*/
+{
+	color:white!important;
+	background-color: #00405D!important;
+	width:max-content;
+	text-transform: uppercase;
+	height: max-content;
+	padding: 4px 12px 4px 12px!important;
+	margin: 0%;
+	align-self:flex-start;
+}
+
 .content-row{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	gap:24px;
 	justify-content: center;
+}
+
+.textboxes{
+	gap:24px;
+	 align-self:flex-start;
+	  width:max-content;
+	  display:flex;flex-direction:row
+}
+.textboxes:first-child{
+	margin: 24px !important;
 }
 
 .box p{
@@ -392,6 +443,13 @@ margin-left:auto;
 #page2 .text-cont div{
 	width: 50%;
 }
+
+h4{
+	font-family: 'Raleway';
+	font-weight: 600;
+	margin:0;
+	}
+
 /*media*/
 
 @media all and (min-width:1440px) {
@@ -439,6 +497,9 @@ margin-left:auto;
 		font-family:"Raleway";
 		font-size:16px;
 		line-height: auto;
+	}
+	h4{
+		font-size: 18px!important;
 	}
 
 }
@@ -518,6 +579,9 @@ margin-left:auto;
 		font-family:"Raleway";
 		font-size:16px;
 		line-height: auto;
+	}
+	h4{
+		font-size: 14px!important;
 	}
 }
 
@@ -676,10 +740,15 @@ margin-left:auto;
 		font-size:12px;
 		line-height: auto;
 	}
+
 	.regular{
 		font-family:"Raleway";
-		font-size:10px;
-		line-height: 12px;
+		font-size:12px!important;
+		line-height: 16px!important;
+	}
+	h4{
+		font-size: 12px!important;
+		line-height: 14px!important;
 	}
 
 }
@@ -828,5 +897,9 @@ margin-left:auto;
 		line-height: auto;
 	}
 
+	h4{
+		font-size: 12px!important;
+		line-height: 14px!important;
+	}
 }
 
