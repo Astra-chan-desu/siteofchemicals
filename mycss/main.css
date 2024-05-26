@@ -736,6 +736,14 @@ h4 {
 			max-width: 400px;
 		}
 
+		.item .regular{
+			font-size: 12px!important;
+		}
+
+		.info-row p{
+			font-size: 15px;
+		}
+
 
 	}
 
@@ -848,6 +856,11 @@ h4 {
 		font-size: 20px;
 	}
 
+	h1 {
+		font-size: 48px;
+		line-height: 1;
+	}
+
 
 	@media (max-width:500px) {
 		#thermopol {
@@ -948,6 +961,12 @@ h4 {
 			display: flex;
 		}
 
+		
+		h1 {
+			font-size: 40px;
+			line-height: 1;
+		}
+
 	}
 
 	@media (max-width:370px) {
@@ -961,6 +980,11 @@ h4 {
 			padding-right: 20px;
 		}
 
+			
+		h1 {
+			font-size: 35px;
+			line-height: 1;
+		}
 
 	}
 
@@ -1002,10 +1026,6 @@ h4 {
 		line-height: normal;
 	}
 
-	h1 {
-		font-size: 24px !important;
-		line-height: 32px !important;
-	}
 
 	.regular {
 		font-family: "Raleway";
