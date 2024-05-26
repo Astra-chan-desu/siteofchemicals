@@ -294,7 +294,9 @@ h3{
 .mobile-v {
 	display: none;
 }
-
+.mobile-antiv {
+	display: flex;
+}
 #formul{
 	display: flex;
 	float: right;
@@ -422,9 +424,13 @@ margin-left:auto;
 
 
 .bold-large{
-	font-weight:700;
+	font-weight:700!important;
+	margin:0;
 }
-
+h1{
+	font-weight:700!important;
+	font-family: "Nexa Demo Light";
+}
 
 .onl-text-pg {
 	padding: 2em;
@@ -454,6 +460,10 @@ h4{
 	margin:0;
 
 
+	}
+.item .box .mobile-antiv{
+	display: flex;flex-direction:column!important;
+
 }
 
 #page5 p{
@@ -479,6 +489,7 @@ font-weight: 500;
 
 .footer #thermopol{
 	margin: 0!important;
+
 }
 
 #info-row-box{
@@ -514,6 +525,7 @@ font-weight: 500;
 }
 
 
+}
 /*media*/
 
 @media all and (min-width:1440px) {
@@ -554,13 +566,17 @@ font-weight: 500;
 
 	.bold-large{
 		font-family: "Raleway";
-		font-size:20px;
-		line-height: auto;
+		font-size:20px!important;
+		line-height: normal;
+	}
+	h1{
+		font-size: 56px!important;
+		line-height: 62px!important;
 	}
 	.regular{
 		font-family:"Raleway";
-		font-size:16px;
-		line-height: auto;
+		font-size:16px!important;
+		line-height: normal;
 	}
 	h4{
 		font-size: 18px!important;
@@ -580,10 +596,11 @@ font-weight: 500;
 
 
 @media (max-width:1440px) and (min-width:768px)  {
+
 	.box h1>strong{
 		font-size: 32px;
 	}
-	
+
 	#page5{
 		padding:5vh 2vw 2vh 5vw;
 	} 
@@ -657,17 +674,26 @@ font-weight: 500;
 	}
 	.bold-large{
 		font-family: "Raleway";
-		font-size:20px;
-		line-height: auto;
+		font-size:20px!important;
+		line-height: normal;
+	}
+	h1{
+		font-size: 56px!important;
+		line-height: 62px!important;
 	}
 	.regular{
 		font-family:"Raleway";
-		font-size:16px;
-		line-height: auto;
+		font-size:16px!important;
+		line-height: normal;
 	}
 	h4{
 		font-size: 14px!important;
 	}
+
+	.smtxt1{
+		font-size:12px!important;
+	 }
+
 	.go-to-app{
 		padding: 0.5em 0.5em 0.5em 0.5em;
 	}
@@ -675,9 +701,11 @@ font-weight: 500;
 
 
 @media (min-width:320px) and (max-width:768px) {
+
 	.box h1>strong{
 		font-size: 30px;
 	}
+
 	#page5 p{
 		font-size: 20px;
 	}
@@ -797,6 +825,13 @@ font-weight: 500;
 		}
 		.go-to-app br{display: block;}
 
+		.mobile-v {
+			display: flex;
+		}
+		.mobile-antiv {
+			display: none!important;
+		}
+
 		.mobile-v{
 			display: flex;
 		}
@@ -848,10 +883,13 @@ font-weight: 500;
 
 	.bold-large{
 		font-family: "Raleway";
-		font-size:12px;
-		line-height: auto;
+		font-size:12px!important;
+		line-height: normal;
 	}
-
+	h1{
+		font-size: 24px!important;
+		line-height: 32px!important;
+	}
 	.regular{
 		font-family:"Raleway";
 		font-size:12px!important;
@@ -864,12 +902,27 @@ font-weight: 500;
 
 
 
+
+}
+
+	.mobile-v {
+		display: flex;
+	}
+	.mobile-antiv {
+		display: none!important;
+	}
 }
 @media (max-width:320px) {
-
+  
 	.box h1>strong{
 		font-size: 20px;
 	}
+	.mobile-v {
+		display: flex;
+	}
+	.mobile-antiv {
+		display: none!important;
+  }
 
 	#page5 p{
 		font-size: 15px;
@@ -878,7 +931,9 @@ font-weight: 500;
 
 	#page5{
 		padding: 3em;
+
 	}
+
 	#page2 .text-cont div{
 		width: 100%;
 		font-size: 12px;
@@ -907,10 +962,7 @@ font-weight: 500;
 		align-items: center;
 		justify-content: center;
 	}
-	.mobile-v {
-		display: flex;
-	}
-
+	
 	#nvb-menu{
 		position: absolute;
 		z-index: 100;
@@ -1006,6 +1058,15 @@ font-weight: 500;
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 		order: 2;
+
+	}
+
+	.right-cont-row-col {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		order: 1;
+	
+
 	}
 
 	.right-cont-row-col {
@@ -1014,16 +1075,19 @@ font-weight: 500;
 		order: 1;
 	
 	}
-
+	h1{
+		font-size: 20px!important;
+		line-height: 24px!important;
+	}
 	.bold-large{
 		font-family: "Raleway";
-		font-size:14px;
-		line-height: auto;
+		font-size:14px!important;
+		line-height: normal;
 	}
 	.regular{
 		font-family:"Raleway";
-		font-size:14px;
-		line-height: auto;
+		font-size:14px!important;
+		line-height:normal;
 	}
 
 	h4{
@@ -1032,3 +1096,4 @@ font-weight: 500;
 	}
 }
 
+}
