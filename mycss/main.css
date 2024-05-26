@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://db.onlinewebfonts.com/c/1b35d95a201282c34fa09c1c3883865f?family=Nexa+Demo+Light');
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://db.onlinewebfonts.com/c/1b35d95a201282c34fa09c1c3883865f?family=Nexa+Demo+Light);
 
 body {
 
@@ -177,7 +177,9 @@ background-color: #94CEEC;
 	justify-content: center;
 }
 
-
+.box h1>strong{
+	font-size: 56px;
+}
 
 #univlob img{
 	max-width: 188px;
@@ -279,6 +281,7 @@ h3{
 	font-weight: 700;
 	margin: 0;
 	font-size: 24px;
+	font-family:  "Nexa Demo Light";
 }
 
 
@@ -442,13 +445,74 @@ margin-left:auto;
 
 #page2 .text-cont div{
 	width: 50%;
+	font-size: 40px;
 }
 
 h4{
 	font-family: 'Raleway';
 	font-weight: 600;
 	margin:0;
-	}
+
+
+}
+
+#page5 p{
+font-size: 36px;
+font-family: "Raleway";
+font-weight: 500;
+}
+
+#page5{
+	padding:10vh 10vw 10vh 10vw;
+}
+
+#left-footer-row{
+	display: flex;
+	justify-items:flex-start;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.footer p{
+	font-size: 19px;
+}
+
+.footer #thermopol{
+	margin: 0!important;
+}
+
+#info-row-box{
+	background-color: transparent;
+	padding: 0!important;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+}
+
+.info-row{
+	width: 100%!important;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: row;
+	padding: 24px!important;
+	gap:16px;
+	align-self: center;
+	
+}
+.info-row p{
+	font-size:19px;
+	margin-bottom: 0;
+
+}
+.numder{
+	color: var(--blue-bg-color);
+	font-size: 48px!important;
+	margin: 0!important;
+	font-weight: 700;
+	font-family: "Nexa Demo Light";
+}
+
 
 /*media*/
 
@@ -502,12 +566,27 @@ h4{
 		font-size: 18px!important;
 	}
 
+	.go-to-app{
+		font-size:20px;
+		height: auto;
+	}
+	.go-to-app ing{
+		height: 100%;
+	}
+
+
 }
 
 
 
 @media (max-width:1440px) and (min-width:768px)  {
-
+	.box h1>strong{
+		font-size: 32px;
+	}
+	
+	#page5{
+		padding:5vh 2vw 2vh 5vw;
+	} 
 	#nvb-menu{
 		width: auto;
 		max-width: 100%;
@@ -538,6 +617,9 @@ h4{
 	.content-row .box{
 		padding:2em;
 	}
+	#page2 .text-cont div{
+		font-size: 30px;
+	}
 	
 	@media (max-width:950px){
 
@@ -566,6 +648,9 @@ h4{
 		
 	}
 	@media (max-width:800px){
+		#page2 .text-cont div{
+			font-size: 25px;
+		}
 		#chemlog{
 			display: none!important;
 		}
@@ -583,10 +668,25 @@ h4{
 	h4{
 		font-size: 14px!important;
 	}
+	.go-to-app{
+		padding: 0.5em 0.5em 0.5em 0.5em;
+	}
 }
 
 
 @media (min-width:320px) and (max-width:768px) {
+	.box h1>strong{
+		font-size: 30px;
+	}
+	#page5 p{
+		font-size: 20px;
+	}
+	#page5{
+		padding: 3em;
+	}
+	#page2 .text-cont div{
+		font-size: 20px;
+	}
 	#go-up img{
 		height: 32px!important;
 	}
@@ -651,6 +751,11 @@ h4{
 
 	}
 	@media (max-width:450px){
+
+		#page2 .text-cont div{
+			font-size: 15px;
+		}
+
 		.content-row{
 			gap: 10px;
 		}
@@ -691,6 +796,10 @@ h4{
 			margin: 0;
 		}
 		.go-to-app br{display: block;}
+
+		.mobile-v{
+			display: flex;
+		}
 		
 	}
 	@media (max-width:370px) {
@@ -707,13 +816,15 @@ h4{
 	}
 
 	.left-cont-row-col{
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		order: 2;
 	}
 
 	.right-cont-row-col {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		order: 1;
 	}
 
 	.content-row{
@@ -751,8 +862,23 @@ h4{
 		line-height: 14px!important;
 	}
 
+
+
 }
 @media (max-width:320px) {
+
+	.box h1>strong{
+		font-size: 20px;
+	}
+
+	#page5 p{
+		font-size: 15px;
+	}
+	#page5 br{display: block;}
+
+	#page5{
+		padding: 3em;
+	}
 	#page2 .text-cont div{
 		width: 100%;
 		font-size: 12px;
@@ -866,24 +992,27 @@ h4{
 		}
 		
 	}
-	#cont-go-to-app{
+	#go-to-app{
 		align-items: center;
 		height: auto;
 		margin: 5em 0 0.5em 0;
 		gap:3px;
 	}
-	#cont-go-to-app p{
+	#go-to-app p{
 		margin-bottom: 0;
 	}
 
 	.left-cont-row-col{
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		order: 2;
 	}
 
 	.right-cont-row-col {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		order: 1;
+	
 	}
 
 	.bold-large{
