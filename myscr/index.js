@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     //получим все scrollbox
+
+
+
+    
     const scrollingWrapper = document.querySelectorAll('.scrollingBlock');
     scrollingWrapper.forEach(scrollingBlock => {
         //активация первой ссылки сразу при создании 
@@ -22,5 +26,23 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-    }
+
+
+     const navlinck = document.querySelectorAll('#nvb-menu a');
+    navlinck.forEach(link => {
+        link.addEventListener("click",
+
+        function(){
+            document.querySelector('.nav-btn').click();
+        });
+
+
+        }
+        )
+
+
+           
+        }
+
+    
 );
