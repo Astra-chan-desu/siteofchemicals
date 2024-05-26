@@ -291,7 +291,9 @@ h3{
 .mobile-v {
 	display: none;
 }
-
+.mobile-antiv {
+	display: flex;
+}
 #formul{
 	display: flex;
 	float: right;
@@ -449,7 +451,9 @@ h4{
 	font-weight: 600;
 	margin:0;
 	}
-
+.item .box .mobile-antiv{
+	display: flex;flex-direction:column!important;
+}
 /*media*/
 
 @media all and (min-width:1440px) {
@@ -490,13 +494,13 @@ h4{
 
 	.bold-large{
 		font-family: "Raleway";
-		font-size:20px;
-		line-height: auto;
+		font-size:20px!important;
+		line-height: normal;
 	}
 	.regular{
 		font-family:"Raleway";
-		font-size:16px;
-		line-height: auto;
+		font-size:16px!important;
+		line-height: normal;
 	}
 	h4{
 		font-size: 18px!important;
@@ -572,13 +576,13 @@ h4{
 	}
 	.bold-large{
 		font-family: "Raleway";
-		font-size:20px;
-		line-height: auto;
+		font-size:20px!important;
+		line-height: normal;
 	}
 	.regular{
 		font-family:"Raleway";
-		font-size:16px;
-		line-height: auto;
+		font-size:16px!important;
+		line-height: normal;
 	}
 	h4{
 		font-size: 14px!important;
@@ -691,7 +695,12 @@ h4{
 			margin: 0;
 		}
 		.go-to-app br{display: block;}
-		
+		.mobile-v {
+			display: flex;
+		}
+		.mobile-antiv {
+			display: none!important;
+		}
 	}
 	@media (max-width:370px) {
 		#thermopol{
@@ -737,8 +746,8 @@ h4{
 
 	.bold-large{
 		font-family: "Raleway";
-		font-size:12px;
-		line-height: auto;
+		font-size:12px!important;
+		line-height: normal;
 	}
 
 	.regular{
@@ -750,9 +759,20 @@ h4{
 		font-size: 12px!important;
 		line-height: 14px!important;
 	}
-
+	.mobile-v {
+		display: flex;
+	}
+	.mobile-antiv {
+		display: none!important;
+	}
 }
 @media (max-width:320px) {
+	.mobile-v {
+		display: flex;
+	}
+	.mobile-antiv {
+		display: none!important;
+	}
 	#page2 .text-cont div{
 		width: 100%;
 		font-size: 12px;
@@ -781,10 +801,7 @@ h4{
 		align-items: center;
 		justify-content: center;
 	}
-	.mobile-v {
-		display: flex;
-	}
-
+	
 	#nvb-menu{
 		position: absolute;
 		z-index: 100;
@@ -888,13 +905,13 @@ h4{
 
 	.bold-large{
 		font-family: "Raleway";
-		font-size:14px;
-		line-height: auto;
+		font-size:14px!important;
+		line-height: normal;
 	}
 	.regular{
 		font-family:"Raleway";
-		font-size:14px;
-		line-height: auto;
+		font-size:14px!important;
+		line-height:normal;
 	}
 
 	h4{
