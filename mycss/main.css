@@ -421,9 +421,13 @@ margin-left:auto;
 
 
 .bold-large{
-	font-weight:700;
+	font-weight:700!important;
+	margin:0;
 }
-
+h1{
+	font-weight:700!important;
+	font-family: "Nexa Demo Light";
+}
 
 .onl-text-pg {
 	padding: 2em;
@@ -525,6 +529,10 @@ font-weight: 500;
 		font-size:20px!important;
 		line-height: normal;
 	}
+	h1{
+		font-size: 56px!important;
+		line-height: 62px!important;
+	}
 	.regular{
 		font-family:"Raleway";
 		font-size:16px!important;
@@ -625,6 +633,10 @@ font-weight: 500;
 		font-size:20px!important;
 		line-height: normal;
 	}
+	h1{
+		font-size: 56px!important;
+		line-height: 62px!important;
+	}
 	.regular{
 		font-family:"Raleway";
 		font-size:16px!important;
@@ -633,6 +645,9 @@ font-weight: 500;
 	h4{
 		font-size: 14px!important;
 	}
+	.smtxt1{
+		font-size:12px!important;
+	 }
 	.go-to-app{
 		padding: 0.5em 0.5em 0.5em 0.5em;
 	}
@@ -818,7 +833,10 @@ font-weight: 500;
 		font-size:12px!important;
 		line-height: normal;
 	}
-
+	h1{
+		font-size: 24px!important;
+		line-height: 32px!important;
+	}
 	.regular{
 		font-family:"Raleway";
 		font-size:12px!important;
@@ -981,7 +999,10 @@ font-weight: 500;
 		order: 1;
 	
 	}
-
+	h1{
+		font-size: 20px!important;
+		line-height: 24px!important;
+	}
 	.bold-large{
 		font-family: "Raleway";
 		font-size:14px!important;
@@ -999,3 +1020,4 @@ font-weight: 500;
 	}
 }
 
+}
