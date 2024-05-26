@@ -463,6 +463,20 @@ font-weight: 500;
 	padding:10vh 10vw 10vh 10vw;
 }
 
+#left-footer-row{
+	display: flex;
+	justify-items:flex-start;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.footer p{
+	font-size: 19px;
+}
+
+.footer #thermopol{
+	margin: 0!important;
+}
 /*media*/
 
 @media all and (min-width:1440px) {
@@ -522,6 +536,7 @@ font-weight: 500;
 	.go-to-app ing{
 		height: 100%;
 	}
+
 
 }
 
@@ -803,6 +818,8 @@ font-weight: 500;
 		font-size: 12px!important;
 		line-height: 14px!important;
 	}
+
+
 
 }
 @media (max-width:320px) {
