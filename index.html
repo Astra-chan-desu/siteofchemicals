@@ -26,7 +26,7 @@
 				<div id="therm-chem-cont">
 					<div style="display: flex; justify-items: flex-start;align-items: center;">
 						<p class="therm-chem-cont-item" id="thermopol">Thermopol</p>
-						<div class="therm-chem-cont-item" id="chemlog" style="display: flex;align-items: center; margin-top: 1em;">
+						<div class="therm-chem-cont-item" id="chemlog" style="display: flex;align-items: center;">
 							<img src="img/lg/chemlog.png" style="transform: scaleY(1.2);">
 						</div>
 					</div>
@@ -362,10 +362,10 @@
 					<h1><strong>
 						Использование данного веб-приложения дает
 					</strong>
-					<div id="formul" style="margin-top: auto;align-self: flex-end; height: 100%;">
-						<img src="img/lg/form.svg" style="width: 90%; max-height: 400px;margin-top: 1em;" >
-					</div>
 				</h1>
+				<div id="formul" style="margin-top: auto; height: 90%; align-self:flex-end;max-height: 400px;">
+					<img src="img/lg/form.svg" style="height: 90%;max-width: 90%;margin-top: 1em; align-self: flex-end;" >
+				</div>
 				
 				</div>
 
@@ -513,17 +513,15 @@
 
 
 	<div class="container-fluid box footer">
-		<div class="row" style="padding: 0 24px 24px 24px;">
-			<div class=" col-sm-6"
+		<div class="row" style="padding: 24px; height: max-content; align-items: stretch; display: flex;">
+			<div class=" col-sm-6"	style="min-height: 179px; display: flex; flex-direction: column;padding-top: 24px; " id="tmp" >
+				<div>
+					<p  id="thermopol">Thermopol</p>
 
-				style="min-height: 179px;height: 100%; display: flex; flex-direction: column;padding-top: 24px; " >
+				</div>
 				<div id="left-footer-row">
-					<div>
-						<p  id="thermopol">Thermopol</p>
-
-					</div>
 					
-					<div class="logo">
+					<div class="logo" style="margin-bottom: 2em;">
 						<div id="univlob">
 							<img src="img/lg/unloblog.svg">
 						</div>
