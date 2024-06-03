@@ -44,7 +44,10 @@ body {
 	top: 0px !important;
 	min-width: 100vw;
 }
-
+.advantages {
+	background-color:transparent;
+	padding: 0!important;
+}
 #thermopol {
 	font-family: "Nexa Demo";
 	width: auto;
@@ -176,8 +179,9 @@ go-to-app {
 }
 
 .go-to-app {
+	margin-top: 1em;
 	background-color: var(--blue-bg-color);
-	padding: 12px 12px 16px 16px;
+	padding: 16px 12px 16px 24px;
 	height: 54px;
 	width: fit-content;
 	max-width: 100%;
@@ -191,6 +195,10 @@ go-to-app {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin: 0;
+	font-weight: 600!important;
+	font-size: 18px!important;
+	line-height: 21.13px;
 }
 
 .go-to-app:hover {
@@ -212,12 +220,15 @@ go-to-app {
 
 .go-to-app p {
 	margin: 0;
+	font-weight: 600!important;
+	font-size: 18px!important;
+	line-height: 21.13px;
 }
 
 .go-to-app .ellipse {
 	border-radius: 180px;
-	height: 30px;
-	width: 30px;
+	height: 170%;
+	width: auto;
 	background-color: white;
 	color: var(--blue-bg-color);
 	text-align: center;
@@ -644,7 +655,10 @@ p {
 /*media*/
 
 @media all and (min-width:1440px) {
-
+	.advantages{
+	background-color:transparent;
+	padding: 0!important;
+	}
 	.numder {
 		font-size: 48px!important;
 	} 
@@ -702,11 +716,24 @@ p {
 	}
 
 	.go-to-app {
-		font-size: 20px;
-		height: auto;
+		background-color: var(--blue-bg-color);
+		padding: 16px 12px 16px 24px;
+		height: 54px;
+		width: fit-content;
+		max-width: 100%;
+		gap: 24px;
+		border-radius: 180px;
+		border-width: 0;
+		color: white;
+		white-space: nowrap;
+		justify-content: flex-end;
+		transition: all 1s;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 
-	.go-to-app ing {
+	.go-to-app img {
 		height: 100%;
 	}
 
@@ -717,7 +744,11 @@ p {
 
 @media (max-width:1440px) and (min-width:768px) {
 
-	
+	.advantages{
+		background-color:transparent;
+	padding: 0!important;
+		height: 100%; 
+	}
 	.numder {
 		font-size: 48px!important;
 	} 
@@ -807,7 +838,22 @@ p {
 		font-size: 30px;
 	}
 
+	.go-to-app {
+		padding: 8px, 16px, 8px, 24px;
+		
+	}
+	.go-to-app p {
+		margin: 0;
+		font-weight: 600!important;
+		font-size: 16px!important;
+		line-height: 18.78px!important;
+	}
+	
 	@media (max-width:950px) {
+		/* .go-to-app .ellipse{
+			width: 24px;
+			height: 24px;
+		} */
 	
 		.nav>li>a {
 			margin-top: 1em;
@@ -830,6 +876,9 @@ p {
 	}
 
 	@media (max-width:900px) {
+		.go-to-app {
+			font-size: 20px!important;
+		}
 		#thermopol {
 			font-size: 30px;
 			line-height: 2;
@@ -848,20 +897,26 @@ p {
 		#page2 .text-cont div {
 			font-size: 25px;
 		}
-
+		
 		#chemlog {
 			display: none !important;
 		}
+		.go-to-app p {
+			font-size: 16px!important;
+		}
 	}
 
-	.go-to-app {
-		padding: 0.5em 0.5em 0.5em 0.5em;
-	}
+	
 }
 
 
 @media (min-width:320px) and (max-width:768px) {
 
+	.advantages{
+		background-color:transparent;
+	padding: 0!important;
+		height: 100%; 
+	}
 	
 	.numder {
 		font-size: 20px!important;
@@ -923,10 +978,7 @@ p {
 
 	}
 
-	.go-to-app {
-		line-height: 1;
-		font-size: 10px;
-	}
+	
 
 	#thermopol {
 		font-size: 28px;
@@ -1059,11 +1111,13 @@ p {
 		#formul img {
 			width: 70%;
 		}
-	
+		
 	}
 
 	@media (max-width:450px) {
-
+		.go-to-app p {
+			font-size: 16px!important;
+		}
 		#page2 .text-cont div {
 			font-size: 15px;
 		}
@@ -1164,12 +1218,29 @@ p {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+		.go-to-app p {
+			font-size: 14px!important;
+		}
 	}
-
+	
 }
 @media (max-width:320px) {
+	.go-to-app {
+		height:38px;
+		padding: 8px, 16px, 8px, 24px;
+		gap: 4px;
+	}
+	.go-to-app .ellipse{
+		width: 22px;
+		height: 22px;
+	} 
+	
+	.advantages{
+		background-color:transparent;
+	padding: 0!important;
+		height: 100%; 
+	}
 
-		
 	.numder {
 		font-size: 20px!important;
 	} 
@@ -1255,29 +1326,26 @@ p {
 	.accordion-item{
 		padding: 10px;
 	}
-
 	#page5 br {
 		display: block;
 	}
-
 	#page2 .text-cont div {
 		width: 100%;
 		font-size: 12px;
 	}
 
+	/* Фронт писали Владимирова Юлия и Страхов Андрей  */
 	.content-row {
 		flex-direction: column;
 		gap: 0px;
 
 	}
 
-	.go-to-app {
-		height: max-content;
-	}
 
-	.go-to-app .ellipse {
-
-		width: 100%;
+	.go-to-app p {
+		margin: 0;
+		font-size: 14px!important;
+		line-height: 17px;
 	}
 
 	.content-row .box {
@@ -1369,13 +1437,22 @@ p {
 		.go-to-app br {
 			display: block;
 		}
-
+		.go-to-app p {
+			margin: 0;
+			font-size: 10px!important;
+			line-height: 15px;
+		}
+		.go-to-app p {
+			font-size: 11px!important;
+		}
+	
 	}
 
 	#go-to-app {
 		align-items: center;
 		height: auto;
 		margin: 5em 0 0.5em 0;
+
 		gap: 3px;
 	}
 
@@ -1402,4 +1479,5 @@ p {
 		order: 1;
 
 	}
+	
 }
