@@ -148,6 +148,7 @@ go-to-app {
 	color: black;
 	justify-content: flex-end;
 	margin-top: 10px;
+	top:90%;
 }
 
 
@@ -641,17 +642,25 @@ p {
 #left-footer-row{
 	margin-top: auto;
 }
-#tmp{
-	height: auto;
-	display: flex;
-}
+
 
 .numder {
 	color: var(--blue-bg-color);
 	margin: 0 !important;
 	font-weight: 700;
 	font-family: "Nexa Demo B"!important;
+	display: flex;
+	align-items: center;
 } 
+
+#left-footer-col{
+	min-height: 179px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 24px;
+	height: auto;
+	display: flex;
+}
 /*media*/
 
 @media all and (min-width:1440px) {
@@ -773,7 +782,7 @@ p {
 	}
 	h2{
 		font-size: calc( 20px + 16 * ( 100vw / 1450 ) );
-		line-height: 32px;
+		line-height: 36px;
 	}
 	
 	h3{
@@ -782,7 +791,7 @@ p {
 	}
 	h4{
 		font-size: calc( 12px + 12 * ( 100vw / 1450 ) );
-		line-height: 24px;
+		line-height: 30px;
 	}
 
 	#page3 .img-box::after{
@@ -890,6 +899,7 @@ p {
 
 		.info-row p{
 			font-size: 15px;
+			line-height: normal;
 		}
 	}
 
@@ -960,6 +970,7 @@ p {
 		z-index: 100;
 		min-width: auto;
 		max-width: 367px;
+	
 	}
 
 	.overlay {
@@ -1038,6 +1049,7 @@ p {
 		gap:8px;
 		line-height: 16px;
 	}
+
 	@media (max-width:500px) {
 		.box {
 			padding: 12px;
@@ -1049,7 +1061,7 @@ p {
 		}
 
 		#formul img {
-			width: 100%;;
+			width: 100%;
 		}
 
 		#page2 .text-cont div {
@@ -1086,6 +1098,7 @@ p {
 		}
 		.box p{
 			font-size: calc( 12px + 4 * ( 100vw / 500 ) );
+			line-height: normal;
 			margin-bottom: 0;
 		}
 		.text-cont{
@@ -1206,6 +1219,11 @@ p {
 			padding: 12px;
 		}
 
+		#left-footer-col{
+			min-height: auto;
+			padding-top: 0;
+		}
+
 	}
 
 	@media (max-width:370px) {
@@ -1220,6 +1238,11 @@ p {
 		}
 		.go-to-app p {
 			font-size: 14px!important;
+		}
+
+		#left-footer-col{
+			min-height: auto;
+			padding-top: 0;
 		}
 	}
 	
@@ -1241,6 +1264,7 @@ p {
 		height: 100%; 
 	}
 
+	
 	.numder {
 		font-size: 20px!important;
 	} 
@@ -1254,6 +1278,7 @@ p {
 
 	.box p{
 		font-size: calc( 10px + 2 * ( 100vw / 320 ) );
+		line-height: normal;
 		margin-bottom: 0;
 	}
 
@@ -1273,6 +1298,7 @@ p {
 	p{
 		font-size: calc( 10px + 2 * ( 100vw / 320 ) );
 		margin-bottom: 0;
+		
 	}
 
 	h1{
@@ -1282,12 +1308,12 @@ p {
 	h2{
 		margin-top: 0em;
 		font-size: calc( 12px + 4 * ( 100vw / 320 ) );
-		line-height: 28px;
+		line-height: 24px;
 	}
 	
 	h3{
 		font-size: calc( 12px + 4 * ( 100vw / 320 ) );
-		line-height: 28px;
+		line-height: 22px;
 	}
 		
 	h4{
@@ -1361,6 +1387,7 @@ p {
 		z-index: 100;
 		max-width: 367px;
 		margin: 0 auto;
+		top:105%;
 	}
 
 	.overlay {
@@ -1389,8 +1416,15 @@ p {
 	}
 
 	.logo {
-		flex-direction: column;
 		margin-bottom: 100px;
+		gap: 8px;
+	}
+	
+	#univlob img{
+		width: calc(80px + 48*(100vw/320));
+	}
+	#labacad img{
+		width: calc(35px + 20*(100vw/320));
 	}
 
 	#chemlog img {
